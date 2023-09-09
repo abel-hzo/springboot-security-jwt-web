@@ -1,0 +1,98 @@
+<div class="container-photo">
+    <!-- <div class="photo"> -->
+        <!-- <img id="image" alt="photo"> -->
+    <!-- </div> -->
+    <form action="#" method="post">
+        <input type="file" name="photo" id="photo" style="display: none;">  
+        <i class='bx bx-cloud-upload'></i>
+    </form>
+</div>
+
+<div class="container">
+    <ul class="tabs">
+        <li class="active">Agregar / Editar</li>
+    </ul>
+    <div class="container-form">
+        <form action="#" method="post" id="formSave">
+            <input type="hidden" name="idUser" id="idUser">
+            <div class="container-field">
+                <i class='bx bx-user icon-field'></i>
+                <input type="text" name="username" id="username" class="field" placeholder="Usuario" required>
+            </div>
+            <div class="container-field">
+                <i class='bx bxs-key icon-field'></i>
+                <input type="password" name="password" id="password" class="field" placeholder="Password" required>
+            </div>
+            <div class="container-field">
+                <i class='bx bx-lock-alt icon-field'></i>
+                <input type="password" name="confpassword" id="confpassword" class="field" placeholder="Confirmar Password" required>
+                <i class='bx bx-show' ></i>
+                <!-- <i class='bx bx-hide' ></i> -->
+            </div>				
+            <div class="container-field">
+                <i class='bx bx-envelope icon-field'></i>
+                <input type="email" name="email" id="email" class="field" placeholder="Email" required>
+            </div>				
+            <div class="container-field">
+                <i class='bx bx-cake icon-field'></i>
+                <input type="date" name="birthday" id="birthday" class="field" required>
+            </div>	
+            <div class="container-field">
+                <i class='bx bxs-user-detail icon-field'></i>
+                <select name="userRolsDTO[0].rolDTO.idRol" id="idRol" class="field">
+                    <option value="1">Invitado</option>
+                    <option value="2">Usuario</option>
+                    <option value="3">Administrador</option>
+                </select>
+            </div>	      								
+            <div class="container-field">
+                <input id="submit" type="submit" value="Agregar">
+                <input id="clear" type="button" value="Limpiar">
+            </div>
+        </form>			
+    </div>
+</div>    
+
+<div class="container-table">
+    <div class="table">
+        <div class="tr">
+            <div class="td">USUARIO</div>
+            <div class="td">EMAIL</div>
+            <div class="td">NACIMIENTO</div>
+            <div class="td">EDITAR</div>
+        </div>					
+    </div>
+    <div class="pageable">
+        <div class="page">&laquo;</div>
+        <div class="page">&raquo;</div>
+    </div>
+</div>
+
+<style>
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "photo form"
+                             "tabla tabla";
+        /* justify-items: center; */
+        align-items: flex-start;
+        gap: 1rem;
+        height: inherit;
+        width: fit-content;
+        margin: auto;
+        position: relative;
+        top: 2rem;
+    }  
+    
+    .container-photo {
+        grid-area: photo;
+    }
+
+    .container-form {
+        grid-area: form;
+    }
+
+    .container-table {
+        grid-area: tabla;
+    }
+</style>

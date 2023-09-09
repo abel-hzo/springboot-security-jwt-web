@@ -1,0 +1,80 @@
+aside {
+    position: absolute;
+    top: 4.5rem;
+    left: 5px;
+    background-color: white;
+    width: 35px;
+    box-shadow: var(--shadow-boxes);
+    height: 90%;
+    border-radius: 5px;
+    z-index: 100;
+    overflow: hidden;
+    transition: width 300ms ease;
+}
+
+aside .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside .top i {
+    padding: 10px;
+    font-size: 15px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+aside .top span {
+    display: block;
+    padding: 0 10px;
+    color: var(--text-color);
+}
+
+aside .sidebar ul {
+    list-style: none;
+}
+
+aside .sidebar ul li {
+    cursor: pointer;
+}
+
+aside .sidebar ul li:last-child {
+    margin-top: 2rem;
+}
+
+aside .sidebar ul li .sub-menu {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 3px 0;
+}
+
+aside .sidebar ul li .sub-menu:hover i,
+aside .sidebar ul li .sub-menu:hover span {
+    color: var(--primary-color);
+}
+
+aside .sidebar ul li .sub-menu i, 
+aside .sidebar ul li .sub-menu span {
+    text-decoration: none;
+    display: block;
+    font-size: 13x;
+    color: var(--text-color);
+}
+
+aside .sidebar ul li .sub-menu i {
+    padding: 8px;
+    font-size: 19px;
+}
+
+aside .sidebar ul li.active,
+aside .sidebar ul li.active span,
+aside .sidebar ul li.active i {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+aside .sidebar ul li.active {
+    border-left: 4px solid var(--primary-color);
+}

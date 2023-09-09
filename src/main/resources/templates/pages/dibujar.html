@@ -1,0 +1,60 @@
+    <div class="container-board">
+
+        <div class="container-options">
+            <ul>
+                <li>
+                    <p>Figuras</p>
+                </li>
+                <li class="option active" data-option="brush">
+                    <i class='bx bxs-brush'></i>
+                    <p>Brush</p>
+                </li>
+                <li class="option" data-option="rectangle">
+                    <i class='bx bx-rectangle' ></i>
+                    <p>Rectangulo</p>
+                </li>
+                <li class="option" data-option="circle">
+                    <i class='bx bx-circle' ></i>
+                    <p>Circulo</p>
+                </li>  
+                <li class="option" data-option="triangle">
+                    <i class='bx bx-shape-triangle' ></i>
+                    <p>Triangulo</p>
+                </li> 
+                <li>
+                    <p>Opciones</p>
+                </li>     
+                <li class="option" data-option="erase">
+                    <i class='bx bxs-eraser' ></i>
+                    <p>Borrar</p>                        
+                </li>  
+                <li class="option-fill">
+                    <input type="checkbox" name="fill" id="fill">
+                    <label for="fill">Fill</label>                        
+                </li>  
+                <li class="range">
+                    <input type="range" name="thick" id="thick" min="1" max="30" value="1">
+                </li>
+                <li>
+                    <ul class="colors">
+                        <li><span class="black active"></span></li>
+                        <li><span class="red"></span></li>
+                        <li><span class="green"></span></li>
+                        <li><span class="blue"></span></li>
+                        <li>
+                            <label for="palette" id="labelPalette"></label>
+                            <input type="color" name="palette" id="palette" style="display: none;">
+                        </li>
+                    </ul>
+                </li> 
+                <li>
+                    <div class="clearCanvas">Limpiar</div>
+                </li>
+                <li>
+                    <div class="saveImage">Guardar Imagen</div>
+                </li>                                                                    
+            </ul>
+        </div>
+
+        <canvas id="canva" width="800" height="600"></canvas>
+    </div>

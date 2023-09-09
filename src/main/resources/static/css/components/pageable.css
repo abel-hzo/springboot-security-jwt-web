@@ -1,0 +1,25 @@
+.pageable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 2rem;
+    cursor: pointer;
+}
+
+.pageable .page {
+    padding: 10px;
+    border: 1px solid rgb(206, 206, 206);
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+.pageable .page.active {
+    background-color: rgb(199, 199, 199);
+}
+
+.pageable .page:hover {
+    background-color: rgb(206, 206, 206);
+}

@@ -1,0 +1,30 @@
+.container-photo {
+    border: 2px dashed gray;
+    width: 378px;
+    height: 378px;
+    cursor: pointer;
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.container-photo:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.container-photo .bx-cloud-upload {
+    font-size: 40px;
+    background-color: rgb(118, 255, 191);
+    padding: 8px;
+    border-radius: 8px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+}
+
+.container-photo .bx-cloud-upload:hover {
+    background-color: rgb(49, 253, 158);
+}

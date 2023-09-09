@@ -1,0 +1,41 @@
+header {   
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    box-shadow: 0 3px 12px rgb(133, 133, 133);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    color: rgb(95, 95, 95);
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header .user-logged {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    margin-right: 1rem;;
+}
+
+header .user-logged .user-info {
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+}
+
+header .profile img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}

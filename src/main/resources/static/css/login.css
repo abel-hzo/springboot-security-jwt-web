@@ -1,0 +1,10 @@
+@import url(components/commons.css);
+@import url(components/tabs.css);
+@import url(components/forms.css);
+
+.container {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 10rem;
+}

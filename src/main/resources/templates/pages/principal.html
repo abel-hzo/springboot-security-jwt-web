@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema</title>
+    <!-- <link rel="stylesheet" href="../../static/css/principal.css">
+    <script defer type="module" src="../../static/js/principal.js"></script> -->
+
+    <link rel="stylesheet" href="/css/principal.css">
+    <script defer type="module" src="/js/principal.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <!-- <img src="../../static/images/image-asset.png" alt=""> -->
+            <img src="/images/image-asset.png" alt="">
+            <span>abel<span>hzo</span></span>
+        </div>
+        <div class="user-logged">
+            <div class="user-info">
+                <p>Bienvenido, Username</p>
+                <small>ROL</small>
+            </div>
+            <div class="profile">
+                <!-- <img src="../../static/images/perrito.jpg" alt=""> -->
+                <img src="" id="profileImage" alt="">
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <div class="top">
+            <i class='bx bx-menu toggle-aside'></i>
+            <span>MENU</span>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li class="active" data-page="./inicio" data-script="inicio.js">
+                    <div class="sub-menu">
+                        <i class='bx bx-clipboard'></i>
+                        <span>Inicio</span>
+                    </div>
+                </li>
+                <li data-page="./admin" data-script="admin.js">
+                    <div class="sub-menu">
+                        <i class='bx bxs-dashboard'></i>
+                        <span>Administrar</span>
+                    </div>
+                </li>
+                <li data-page="./listar" data-script="listar.js">
+                    <div class="sub-menu">
+                        <i class='bx bx-list-ol'></i>
+                        <span>Listar</span>
+                    </div>
+                </li>
+                <li data-page="./dibujar" data-script="dibujar.js">
+                    <div class="sub-menu">
+                        <i class='bx bx-edit-alt'></i>
+                        <span>Dibujar</span>
+                    </div>
+                </li>
+                <li data-page="./perfil" data-script="perfil.js">
+                    <div class="sub-menu">
+                        <i class='bx bxs-user-detail'></i>
+                        <span>Perfil</span>
+                    </div>
+                </li>
+                <li data-page="./logout" data-script="login.js">
+                    <div class="sub-menu">
+                        <i class='bx bx-log-out'></i>
+                        <span>Salir</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <main></main>
+
+</body>
+
+</html>

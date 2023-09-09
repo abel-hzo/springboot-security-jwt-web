@@ -1,0 +1,67 @@
+<div class="profile-photo">
+    <input type="file" name="photo" id="photoField" style="display: none;">
+</div>
+
+<div class="container">
+    <ul class="tabs">
+        <li class="active">Actualizar</li>
+    </ul>    
+    <div class="container-form">
+        <form action="#" method="post" id="formSave">
+            <input type="hidden" name="idUser">
+            <div class="container-field">
+                <i class='bx bx-user icon-field'></i>
+                <input type="text" name="username" id="username" class="field" placeholder="Usuario" required>
+            </div>
+            <div class="container-field">
+                <i class='bx bxs-key icon-field'></i>
+                <input type="password" name="password" id="password" class="field" placeholder="Password" required>
+            </div>
+            <div class="container-field">
+                <i class='bx bx-lock-alt icon-field'></i>
+                <input type="password" name="confpassword" id="confpassword" class="field" placeholder="Confirmar Password" required>
+                <i class='bx bx-show'></i>
+            </div>				
+            <div class="container-field">
+                <i class='bx bx-envelope icon-field'></i>
+                <input type="email" name="email" id="email" class="field" placeholder="Email" required>
+            </div>				
+            <div class="container-field">
+                <i class='bx bx-cake icon-field'></i>
+                <input type="date" name="birthday" id="birthday" class="field" required>
+            </div>									
+            <div class="container-field">
+                <input type="submit" value="Modificar">
+            </div>
+        </form>			
+    </div>
+</div>
+
+<style>
+    main {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        justify-items: center;
+        gap: 1rem;
+        position: relative;
+        top: 3rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    main .profile-photo {
+        width: 300px;
+        height: 300px;
+        border: 2px dashed gray;
+        border-radius: 50%;
+        cursor: pointer;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 0px 0px;
+    }
+
+    main .profile-photo:hover {
+        background-color: rgb(223, 221, 221);
+    }    
+</style>

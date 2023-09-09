@@ -1,0 +1,24 @@
+@import url(../boxicons/css/boxicons.min.css);
+
+@font-face {
+    font-family: poppins;
+    src: url(../Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+:root {
+    --primary-color: rgb(47, 47, 238);
+    --secondary-color: rgb(142, 142, 233);
+    --shadow-boxes: 0 3px 12px rgb(133, 133, 133);
+    --text-color: rgb(85, 85, 85);
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}

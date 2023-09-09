@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+
+	<!-- <link rel="stylesheet" href="../static/css/login.css">
+	<script defer src="../static/js/login.js"></script> -->
+
+	<link rel="stylesheet" href="/css/login.css">
+	<script defer src="/js/login.js"></script> 
+</head>
+
+<body>
+
+	<section>
+		<div class="container">
+			<ul class="tabs">
+				<li class="active">Login</li>
+				<li>Registrar</li>
+			</ul>
+			<div class="container-form">
+				<form action="/loginUrl" method="POST" id="formLogin">
+					<div class="container-field">
+						<i class='bx bx-user icon-field'></i>
+						<input type="text" name="username" id="username" class="field" placeholder="Usuario" required>
+					</div>
+					<div class="container-field">
+						<i class='bx bxs-key icon-field'></i>
+						<input type="password" name="password" id="password" class="field" placeholder="Password" required>
+						<i class='bx bx-show' data-form="login"></i>
+					</div>
+					<div class="container-field">
+						<input type="submit" value="Entrar">
+					</div>
+				</form>
+				<form action="#" method="post" id="formRegister" style="display: none;">
+					<div class="container-field">
+						<i class='bx bx-user icon-field'></i>
+						<input type="text" name="username" id="username" class="field" placeholder="Usuario" required>
+					</div>
+					<div class="container-field">
+						<i class='bx bxs-key icon-field'></i>
+						<input type="password" name="password" id="password" class="field" placeholder="Password" required>
+					</div>
+					<div class="container-field">
+						<i class='bx bx-lock-alt icon-field'></i>
+						<input type="password" name="confpassword" id="confpassword" class="field" placeholder="Confirmar Password" required>
+						<i class='bx bx-show' data-form="register"></i>
+					</div>				
+					<div class="container-field">
+						<i class='bx bx-envelope icon-field'></i>
+						<input type="email" name="email" id="email" class="field" placeholder="Email" required>
+					</div>				
+					<div class="container-field">
+						<i class='bx bx-cake icon-field'></i>
+						<input type="date" name="birthday" id="birthday" class="field" required>
+					</div>									
+					<div class="container-field">
+						<input type="submit" value="Registrar">
+					</div>
+				</form>				
+			</div>		
+		</div>
+	</section>
+
+</body>
+
+</html>

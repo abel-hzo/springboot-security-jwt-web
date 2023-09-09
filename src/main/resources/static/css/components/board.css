@@ -1,0 +1,140 @@
+.container-board {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+    top: 3rem;
+    display: flex;
+    gap: 1rem;
+    color: rgb(80, 80, 80);
+}
+
+.container-board canvas {
+    background-color: white;
+    box-shadow: 0 3px 12px rgb(133, 133, 133);
+    border-radius: 5px;
+}
+
+.container-board .container-options {
+    background-color: white;
+    box-shadow: 0 3px 12px rgb(133, 133, 133);
+    border-radius: 5px;
+}
+
+.container-board .container-options ul {
+    list-style: none;
+}
+
+.container-board .container-options > ul > li {
+    padding: 9px 2rem;
+}
+
+.container-board .container-options > ul > .option,
+.container-board .container-options > ul > .option-fill {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container-board .container-options > ul > .option-fill {
+    gap: 1.2rem;
+}
+
+.container-board .container-options > ul > .option.active {
+    background-color: rgb(151, 151, 243);
+    color: white;
+    border-left: 4px solid blue;
+}
+
+.container-board .container-options > ul > .option:hover {
+    color: blue;
+}
+
+.container-board .container-options > ul > .option > i,
+.container-board .container-options > ul > .option-fill > input {
+    width: 20px;
+}
+
+.container-board .container-options > ul > .option-fill > label {
+    width: 100%;
+}
+
+.container-board .container-options > ul > .range {
+    margin-top: .8rem;
+}
+
+.container-board .container-options > ul > li > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+
+.container-board .container-options > ul > li > ul > li > span,
+.container-board .container-options > ul > li > ul > li > label {
+    /* El elemento tiene que ser block para que tome la alineacion de grid. */
+    display: block;     
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+}
+
+.container-board .container-options > ul > li > ul > li > span.active::after,
+.container-board .container-options > ul > li > ul > li > label.active::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.container-board .container-options > ul > li > ul > li > span.red {
+    background-color: red;
+}
+
+.container-board .container-options > ul > li > ul > li > span.yellow {
+    background-color: rgb(255, 230, 0);
+}
+
+.container-board .container-options > ul > li > ul > li > span.green {
+    background-color: green;
+}
+
+.container-board .container-options > ul > li > ul > li > span.blue {
+    background-color: blue;
+}
+
+.container-board .container-options > ul > li .clearCanvas {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.container-board .container-options > ul > li .clearCanvas:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.container-board .container-options > ul > li .saveImage {
+    background-color: rgb(26, 194, 26);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+} 
+
+.container-board .container-options > ul > li .saveImage:hover {
+    background-color: rgb(14, 145, 14);
+}

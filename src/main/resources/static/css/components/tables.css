@@ -1,0 +1,40 @@
+.table {
+    display: table;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 3px 12px rgb(133, 133, 133);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.table .tr {
+    display: table-row;
+}
+
+.table .tr .td {
+    display: table-cell;
+    padding: 10px;
+    color: gray;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.table .tr:first-child .td {
+    color: rgb(80, 80, 80);
+    font-weight: bold;
+}
+
+.table .tr:last-child .td {
+    border: none;
+}
+
+.table .tr .td .bx {
+    cursor: pointer;
+    transition: color .5s ease;
+    font-size: 18px;
+}
+
+.table .tr .td .bx:hover {
+    color: black;
+}
